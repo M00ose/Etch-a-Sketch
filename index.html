@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Etch-a-Sketch</h1>
+      </div>
+      <div class="main">
+        <div class="control">
+          <div class="color-container">
+            <div class="color-picker"></div>
+          </div>
+          <button class="btn color" id="btn-active">Color</button>
+          <button class="btn random">Random</button>
+          <button class="btn erase">Erase</button>
+          <button class="btn clear">Clear</button>
+          <button class="btn grid">Edit Grid</button>
+        </div>
+        <div class="slider-wrapper">
+          <input
+            type="range"
+            min="16"
+            max="100"
+            step="2"
+            value="0"
+            id="slider"
+          />
+          <div id="selector"></div>
+          <div id="slider-value">16</div>
+        </div>
+        <div class="grid-wrapper"></div>
+      </div>
+      <div class="canvas-control">
+        <input class="input height" type="text" />
+        <div>x</div>
+        <input class="input width" type="text" />
+        <button class="btn resize">Resize</button>
+      </div>
+      <div class="footer">
+        <p>Made by Mooose</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script src="index.js"></script>
+</html>

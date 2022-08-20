@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen','cursive','Courier New', Courier, monospace;
+}
+
+.color-container {
+    display: flex;
+    border-radius: 8%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    height: 2rem;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8%;
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em #000000;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+#btn-active {
+    background-color: black;
+    color: white;
+    box-shadow: 0.2em 0.2em grey;
+    transform: translateY(0.1rem);
+}
+
+.grid {
+    width: 7rem;
+    font-size: 0.6rem;
+    background-color: yellow;
+}
+
+.header {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: black;
+    color: #fff;
+}
+
+.slider-wrapper {
+    width: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#slider {
+    -webkit-appearance: none;
+    height: 0.3rem;
+    width: 100%;
+    background: black;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#selector {
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.2rem;
+    z-index: 2;
+}
+
+
+#slider-value {
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    height: 2rem;
+    padding: 0.3rem;
+    background: black;
+    border-radius: 10%;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    top: -36px;
+    left: 0;
+}
+
+#slider-value::after{
+    content: '';
+    border-top: 17px solid black;
+    border-left: 0x solid white;
+    border-right: 40px solid white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 50%;
+    height: 300px;
+    box-shadow: 0.1rem 0.5rem 1rem -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.canvas-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input {
+    height: 2rem;
+    width: 5rem;
+    padding: 0.3rem;
+    border-radius: 8%;
+    box-shadow: -0.01rem 0 0 0.01rem #000000;
+    font-size: 0.75rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
